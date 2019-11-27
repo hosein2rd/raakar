@@ -1,0 +1,335 @@
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="insideOverlay">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mwi_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="طراحی سایت علی اکبری"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/mwi_undertitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="12000000 تومان (60 روز)"
+                android:textColor="#888888"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mwi_title" />
+
+            <SeekBar
+                android:id="@+id/mwi_seekbar"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:minHeight="200dp"
+                android:progressTint="@color/RakaarColor"
+                android:thumb="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/mwi_seeknumber"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mwi_seeknumber"
+                app:layout_constraintTop_toTopOf="@+id/mwi_seeknumber" />
+
+            <TextView
+                android:id="@+id/mwi_seeknumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:gravity="center"
+                android:text="35"
+                android:textColor="@color/RakaarColor"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mwi_seekday"
+                app:layout_constraintStart_toEndOf="@+id/mwi_seekday"
+                app:layout_constraintTop_toTopOf="@+id/mwi_seekday" />
+
+            <TextView
+                android:id="@+id/mwi_seekday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="48dp"
+                android:gravity="center"
+                android:text="روز"
+                android:textColor="@color/RakaarColor"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mwi_undertitle" />
+
+            <TextView
+                android:id="@+id/mwi_starttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="16dp"
+                android:text="تاریخ شروع پروژه"
+                android:textSize="11dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mwi_seekbar" />
+
+            <TextView
+                android:id="@+id/mwi_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:text="96/12/24"
+                android:textSize="11dp"
+                app:layout_constraintEnd_toStartOf="@+id/mwi_starttext"
+                app:layout_constraintTop_toBottomOf="@+id/mwi_seekbar" />
+
+            <TextView
+                android:id="@+id/mwi_endtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="تاریخ پایان پروژه"
+                android:textSize="11dp"
+                app:layout_constraintStart_toEndOf="@+id/mwi_end"
+                app:layout_constraintTop_toBottomOf="@+id/mwi_seekbar" />
+
+            <TextView
+                android:id="@+id/mwi_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:text="97/02/23"
+                android:textSize="11dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mwi_seekbar" />
+
+            <ImageView
+                android:id="@+id/mwi_infoback"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mwi_start"
+                app:srcCompat="@drawable/addprojectgray" />
+
+            <ImageView
+                android:id="@+id/mwi_infoimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:tint="#44b1c5"
+                app:layout_constraintRight_toRightOf="@+id/mwi_infoback"
+                app:layout_constraintTop_toBottomOf="@+id/mwi_infoline"
+                app:srcCompat="@drawable/info" />
+
+            <ImageView
+                android:id="@+id/mwi_infoline"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/mwi_infoback"
+                app:layout_constraintRight_toRightOf="@+id/mwi_infoback"
+                app:layout_constraintTop_toTopOf="@+id/mwi_infoback"
+                app:srcCompat="@drawable/addprojectblueline" />
+
+            <TextView
+                android:id="@+id/mwi_infotitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="right"
+                android:text="توضیحات پروژه"
+                android:textColor="#44b1c5"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mwi_infoimg"
+                app:layout_constraintLeft_toLeftOf="@+id/mwi_infoback"
+                app:layout_constraintRight_toLeftOf="@+id/mwi_infoimg"
+                app:layout_constraintTop_toTopOf="@+id/mwi_infoimg" />
+
+            <ScrollView
+                android:id="@+id/mwi_infoscroll"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mwi_infoback"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="@+id/mwi_infoback"
+                app:layout_constraintRight_toRightOf="@+id/mwi_infoback"
+                app:layout_constraintTop_toBottomOf="@+id/mwi_infotitle"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/mwi_infotext"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="right"
+                            android:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است."
+                            android:textColor="#666666"
+                            android:textSize="11dp"
+                            app:layout_constraintVertical_bias="0.0" />
+                    </android.support.constraint.ConstraintLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <ImageView
+                android:id="@+id/mwi_fileback"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mwi_infoscroll"
+                app:srcCompat="@drawable/addprojectbox" />
+
+            <TextView
+                android:id="@+id/mwi_filetitle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="right"
+                android:text="فایل نهایی"
+                android:textColor="#44b1c5"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mwi_fileimg"
+                app:layout_constraintEnd_toStartOf="@+id/mwi_fileimg"
+                app:layout_constraintRight_toLeftOf="@+id/mwi_fileimg"
+                app:layout_constraintStart_toEndOf="@+id/mwi_download"
+                app:layout_constraintTop_toTopOf="@+id/mwi_fileimg"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/mwi_fileimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:tint="#44b1c5"
+                app:layout_constraintBottom_toBottomOf="@+id/mwi_fileback"
+                app:layout_constraintRight_toRightOf="@+id/mwi_fileback"
+                app:layout_constraintTop_toTopOf="@+id/mwi_fileback"
+                app:layout_constraintVertical_bias="0.444"
+                app:srcCompat="@drawable/finalfile" />
+
+            <ImageView
+                android:id="@+id/mwi_linkback"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mwi_fileback"
+                app:srcCompat="@drawable/addprojectbox" />
+
+            <TextView
+                android:id="@+id/mwi_linktitle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="12dp"
+                android:gravity="right"
+                android:text="لینک فایل نهایی: لینکی برای نمایش وجود ندارد!"
+                android:textColor="#44b1c5"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mwi_linkimg"
+                app:layout_constraintEnd_toStartOf="@+id/mwi_fileimg"
+                app:layout_constraintRight_toLeftOf="@+id/mwi_fileimg"
+                app:layout_constraintStart_toStartOf="@+id/mwi_linkback"
+                app:layout_constraintTop_toTopOf="@+id/mwi_linkimg"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/mwi_linkimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:tint="#44b1c5"
+                app:layout_constraintBottom_toBottomOf="@+id/mwi_linkback"
+                app:layout_constraintEnd_toEndOf="@+id/mwi_linkback"
+                app:layout_constraintRight_toRightOf="@+id/mwi_fileback"
+                app:layout_constraintTop_toTopOf="@+id/mwi_linkback"
+                app:srcCompat="@drawable/finalfile" />
+
+            <ImageView
+                android:id="@+id/mwi_download"
+                android:layout_width="23dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mwi_fileback"
+                app:layout_constraintStart_toStartOf="@+id/mwi_fileback"
+                app:layout_constraintTop_toTopOf="@+id/mwi_fileback"
+                app:srcCompat="@drawable/download_file" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/projects_dot_image2"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/projects_day"
+            app:layout_constraintTop_toBottomOf="@+id/projects_details"
+            app:srcCompat="@drawable/dot" />
+
+        <ImageView
+            android:id="@+id/projects_dot_image1"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/projects_cost"
+            app:layout_constraintTop_toBottomOf="@+id/projects_details"
+            app:srcCompat="@drawable/dot" />
+
+        <TextView
+            android:id="@+id/projects_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:text="45 روز"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/projects_dot_image1"
+            app:layout_constraintTop_toBottomOf="@+id/projects_details" />
+
+        <TextView
+            android:id="@+id/projects_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="10dp"
+            android:text="طراحی سایت اکبر آقا عبدی"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/projects_details"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:gravity="right"
+            android:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است"
+            android:textSize="16dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/projects_name" />
+
+        <TextView
+            android:id="@+id/projects_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:text="200,000 تومان"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/projects_details"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/project_propsal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:text="120 پیشنهاد"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/projects_dot_image2"
+            app:layout_constraintTop_toBottomOf="@+id/projects_details" />
+
+        <TextView
+            android:id="@+id/projects_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="10dp"
+            android:text="96/10/7"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

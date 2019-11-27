@@ -1,0 +1,472 @@
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="insideOverlay">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/deadline_timetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:text="مدت زمان انجام"
+                android:textColor="@color/RakaarColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/deadline_time"
+                app:layout_constraintStart_toEndOf="@+id/deadline_seekbar" />
+
+            <TextView
+                android:id="@+id/deadline_undertitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="برنامه نویسی / علی اکبری"
+                android:textColor="#888888"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deadline_title" />
+
+            <TextView
+                android:id="@+id/deadline_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:text="97/02/23"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/deadline_seekbar"
+                app:layout_constraintEnd_toStartOf="@+id/deadline_seekbar" />
+
+            <TextView
+                android:id="@+id/deadline_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:text="طراحی سایت علی اکبری"
+                android:textColor="#000000"
+                android:textSize="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/deadline_attachback"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deadline_infoback"
+                app:srcCompat="@drawable/addprojectbox" />
+
+            <TextView
+                android:id="@+id/deadline_starttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:text="تاریخ شروع پروژه"
+                android:textColor="@color/RakaarColor"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/deadline_seekbar"
+                app:layout_constraintTop_toTopOf="@+id/deadline_seekbar" />
+
+            <TextView
+                android:id="@+id/deadline_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:text="60 روز"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/deadline_seekbar"
+                app:layout_constraintStart_toEndOf="@+id/deadline_seekbar" />
+
+            <TextView
+                android:id="@+id/deadline_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:text="120000 تومان"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@+id/deadline_seekbar"
+                app:layout_constraintTop_toBottomOf="@+id/deadline_pricetext" />
+
+            <ImageView
+                android:id="@+id/deadline_attachimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:tint="#44b1c5"
+                app:layout_constraintBottom_toBottomOf="@+id/deadline_attachback"
+                app:layout_constraintRight_toRightOf="@+id/deadline_attachback"
+                app:layout_constraintTop_toTopOf="@+id/deadline_attachback"
+                app:layout_constraintVertical_bias="0.444"
+                app:srcCompat="@drawable/attachment" />
+
+            <TextView
+                android:id="@+id/deadline_seeknumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="35"
+                android:textColor="@color/RakaarColor"
+                android:textSize="28dp"
+                app:layout_constraintBottom_toTopOf="@+id/deadline_seekday"
+                app:layout_constraintEnd_toEndOf="@+id/deadline_seekbar"
+                app:layout_constraintStart_toStartOf="@+id/deadline_seekbar"
+                app:layout_constraintTop_toTopOf="@+id/deadline_seekbar" />
+
+            <ImageView
+                android:id="@+id/deadline_fileback"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="48dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deadline_attachback"
+                app:srcCompat="@drawable/addprojectbox" />
+
+            <TextView
+                android:id="@+id/deadline_pricetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:text="قیمت پروژه"
+                android:textColor="@color/RakaarColor"
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@+id/deadline_seekbar"
+                app:layout_constraintTop_toTopOf="@+id/deadline_seekbar" />
+
+            <TextView
+                android:id="@+id/deadline_filetitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="right"
+                android:text="فایل نهایی"
+                android:textColor="#44b1c5"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/deadline_fileimg"
+                app:layout_constraintEnd_toStartOf="@+id/deadline_fileimg"
+                app:layout_constraintRight_toLeftOf="@+id/deadline_fileimg"
+                app:layout_constraintStart_toEndOf="@+id/deadline_upload"
+                app:layout_constraintTop_toTopOf="@+id/deadline_fileimg"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/deadline_seekday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="روز"
+                android:textColor="@color/RakaarColor"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/deadline_seekbar"
+                app:layout_constraintEnd_toEndOf="@+id/deadline_seekbar"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/deadline_seekbar" />
+
+            <ImageView
+                android:id="@+id/deadline_infoback"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="48dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deadline_seekbar"
+                app:srcCompat="@drawable/addprojectgray" />
+
+            <ImageView
+                android:id="@+id/deadline_fileimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:tint="#44b1c5"
+                app:layout_constraintBottom_toBottomOf="@+id/deadline_fileback"
+                app:layout_constraintRight_toRightOf="@+id/deadline_fileback"
+                app:layout_constraintTop_toTopOf="@+id/deadline_fileback"
+                app:layout_constraintVertical_bias="0.444"
+                app:srcCompat="@drawable/finalfile" />
+
+            <TextView
+                android:id="@+id/deadline_endtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:text="تاریخ پایان پروژه"
+                android:textColor="@color/RakaarColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/deadline_end"
+                app:layout_constraintEnd_toStartOf="@+id/deadline_seekbar" />
+
+            <TextView
+                android:id="@+id/deadline_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:text="96/12/24"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/deadline_seekbar"
+                app:layout_constraintTop_toBottomOf="@+id/deadline_starttext" />
+
+            <TextView
+                android:id="@+id/deadline_attachtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="right"
+                android:text="فایل ضمیمه"
+                android:textColor="#44b1c5"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/deadline_attachimg"
+                app:layout_constraintEnd_toStartOf="@+id/deadline_attachimg"
+                app:layout_constraintRight_toLeftOf="@+id/deadline_attachimg"
+                app:layout_constraintStart_toEndOf="@+id/deadline_dowload"
+                app:layout_constraintTop_toTopOf="@+id/deadline_attachimg"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/deadline_linkback"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="48dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deadline_fileback"
+                app:srcCompat="@drawable/addprojectbox" />
+
+            <EditText
+                android:id="@+id/add_linktext"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:hint="لینک فایل نهایی"
+                android:inputType="textWebEditText"
+                android:textColor="#323333"
+                android:textColorHint="#a1d8e2"
+                android:textCursorDrawable="@color/RakaarColor"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/deadline_linkback"
+                app:layout_constraintEnd_toStartOf="@+id/deadline_linkimg"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/add_titlebox"
+                app:layout_constraintRight_toLeftOf="@+id/add_titleimg"
+                app:layout_constraintStart_toStartOf="@+id/deadline_linkback"
+                app:layout_constraintTop_toTopOf="@+id/deadline_linkback"
+                app:layout_constraintVertical_bias="0.333" />
+
+            <ImageView
+                android:id="@+id/deadline_linkimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:tint="#44b1c5"
+                app:layout_constraintBottom_toBottomOf="@+id/deadline_linkback"
+                app:layout_constraintEnd_toEndOf="@+id/deadline_linkback"
+                app:layout_constraintTop_toTopOf="@+id/deadline_linkback"
+                app:srcCompat="@drawable/finalfile" />
+
+            <Button
+                android:id="@+id/deadline_button"
+                android:layout_width="230dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/enterbutton"
+                android:text="ارسال"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deadline_linkback" />
+
+
+            <TextView
+                android:id="@+id/deadline_infotitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="right"
+                android:text="توضیحات پروژه"
+                android:textColor="#44b1c5"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/deadline_infoimg"
+                app:layout_constraintLeft_toLeftOf="@+id/deadline_infoback"
+                app:layout_constraintRight_toLeftOf="@+id/deadline_infoimg"
+                app:layout_constraintTop_toTopOf="@+id/deadline_infoimg" />
+
+            <ImageView
+                android:id="@+id/deadline_infoline"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/deadline_infoback"
+                app:layout_constraintRight_toRightOf="@+id/deadline_infoback"
+                app:layout_constraintTop_toTopOf="@+id/deadline_infoback"
+                app:srcCompat="@drawable/addprojectblueline" />
+
+            <ImageView
+                android:id="@+id/deadline_infoimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:tint="#44b1c5"
+                app:layout_constraintRight_toRightOf="@+id/deadline_infoback"
+                app:layout_constraintTop_toBottomOf="@+id/deadline_infoline"
+                app:srcCompat="@drawable/info" />
+
+            <ImageView
+                android:id="@+id/deadline_dowload"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/deadline_attachback"
+                app:layout_constraintStart_toStartOf="@+id/deadline_attachback"
+                app:layout_constraintTop_toTopOf="@+id/deadline_attachback"
+                app:srcCompat="@drawable/download_file" />
+
+            <ImageView
+                android:id="@+id/deadline_upload"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/deadline_fileback"
+                app:layout_constraintStart_toStartOf="@+id/deadline_fileback"
+                app:layout_constraintTop_toTopOf="@+id/deadline_fileback"
+                app:srcCompat="@drawable/upload_file" />
+
+            <me.tankery.lib.circularseekbar.CircularSeekBar
+                android:id="@+id/deadline_seekbar"
+                android:layout_width="180dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                app:cs_circle_color="#ebebeb"
+                app:cs_circle_progress_color="@color/RakaarColor"
+                app:cs_circle_stroke_width="8dp"
+                app:cs_circle_style="square"
+                app:cs_disable_pointer="true"
+                app:cs_negative_enabled="false"
+                app:cs_progress="60"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deadline_undertitle" />
+
+            <ScrollView
+                android:id="@+id/deadline_infoscroll"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/deadline_infoback"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="@+id/deadline_infoback"
+                app:layout_constraintRight_toRightOf="@+id/deadline_infoback"
+                app:layout_constraintTop_toBottomOf="@+id/deadline_infotitle"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/deadline_infotext"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="right"
+                            android:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است."
+                            android:textColor="#666666"
+                            android:textSize="16dp"
+                            app:layout_constraintVertical_bias="0.0" />
+                    </android.support.constraint.ConstraintLayout>
+                </LinearLayout>
+            </ScrollView>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

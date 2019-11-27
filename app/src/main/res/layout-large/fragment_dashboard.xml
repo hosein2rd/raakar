@@ -1,0 +1,353 @@
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="insideOverlay">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/seekbarback"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/timelineback"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <me.tankery.lib.circularseekbar.CircularSeekBar
+                android:id="@+id/deadline_seekbar"
+                android:layout_width="140dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="32dp"
+                app:cs_circle_color="#ebebeb"
+                app:cs_circle_progress_color="#f15854"
+                app:cs_circle_stroke_width="7dp"
+                app:cs_circle_style="square"
+                app:cs_disable_pointer="true"
+                app:cs_negative_enabled="false"
+                app:cs_progress="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seektitle" />
+
+            <me.tankery.lib.circularseekbar.CircularSeekBar
+                android:id="@+id/seekbarg"
+                android:layout_width="140dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="8dp"
+                app:cs_circle_color="#ebebeb"
+                app:cs_circle_progress_color="#aada8c"
+                app:cs_circle_stroke_width="7dp"
+                app:cs_circle_style="square"
+                app:cs_disable_pointer="true"
+                app:cs_progress="0"
+                app:layout_constraintBottom_toTopOf="@+id/seekbarb"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deadline_seekbar"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <me.tankery.lib.circularseekbar.CircularSeekBar
+                android:id="@+id/seekbarb"
+                android:layout_width="140dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginLeft="64dp"
+                app:cs_circle_color="#ebebeb"
+                app:cs_circle_progress_color="#99cdd8"
+                app:cs_circle_stroke_width="7dp"
+                app:cs_circle_style="square"
+                app:cs_disable_pointer="true"
+                app:cs_progress="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/seektitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="وضعیت فعلی"
+                android:textColor="#3b3b3b"
+                android:textSize="24dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/numberr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="#f15854"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/deadline_seekbar"
+                app:layout_constraintLeft_toLeftOf="@+id/deadline_seekbar"
+                app:layout_constraintRight_toRightOf="@+id/deadline_seekbar"
+                app:layout_constraintTop_toTopOf="@+id/deadline_seekbar" />
+
+            <TextView
+                android:id="@+id/numberg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:textColor="#aada8c"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/seekbarg"
+                app:layout_constraintLeft_toLeftOf="@+id/seekbarg"
+                app:layout_constraintRight_toRightOf="@+id/seekbarg"
+                app:layout_constraintTop_toTopOf="@+id/seekbarg" />
+
+            <TextView
+                android:id="@+id/numberb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textColor="#99cdd8"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/seekbarb"
+                app:layout_constraintLeft_toLeftOf="@+id/seekbarb"
+                app:layout_constraintRight_toRightOf="@+id/seekbarb"
+                app:layout_constraintTop_toTopOf="@+id/seekbarb" />
+
+            <TextView
+                android:id="@+id/textr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="24dp"
+                android:gravity="center"
+                android:text="کارهای انجام شده"
+                android:textColor="#f15854"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/deadline_seekbar"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toRightOf="@+id/deadline_seekbar"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/deadline_seekbar" />
+
+            <TextView
+                android:id="@+id/textg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="24dp"
+                android:gravity="center"
+                android:text="اعتبار کسب شده
+                    (x1000 تومان)"
+                android:textColor="#aada8c"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/seekbarg"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toRightOf="@+id/seekbarg"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekbarg" />
+
+            <TextView
+                android:id="@+id/textb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="24dp"
+                android:gravity="center"
+                android:text="پیشنهادهای باقیمانده"
+                android:textColor="#99cdd8"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/seekbarb"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toRightOf="@+id/seekbarb"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekbarb" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/timelineback"
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:backgroundTint="#65d3bb"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/timelinetitle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="طراحی لوگو اکبر آقا عبدی"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <SeekBar
+                android:id="@+id/timeline"
+                android:layout_width="0dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:progress="0"
+                android:progressTint="#ffffff"
+                android:thumb="@null"
+                app:layout_constraintBottom_toTopOf="@+id/timelinetime"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/timelinetitle" />
+
+            <TextView
+                android:id="@+id/timelinetime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="مدت زمان باقی مانده به ساعت"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/medalback"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#6416ad"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/timelineback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/timelineback"
+        app:layout_constraintTop_toTopOf="@+id/timelineback"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/medaltitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="بسته ویژه"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/medalimg"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/medaltype"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/medaltitle"
+                app:srcCompat="@drawable/nomedal" />
+
+            <TextView
+                android:id="@+id/medaltype"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="برای خرید لمس کنید"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <Button
+                android:id="@+id/medalbutton"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@null"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

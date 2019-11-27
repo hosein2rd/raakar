@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Raakar</string>
+    <string name="title_projects">پروژه ها</string>
+    <string name="title_credit">اعتبار</string>
+    <string name="title_dashboard">داشبورد</string>
+    <string name="title_messages">پیام ها</string>
+    <string name="title_profile">پروفایل</string>
+    <string name="category_prompt">Choose a category</string>
+
+    <string-array name="category_arrays">
+        <item>برنامه نویسی</item>
+        <item>طراحی</item>
+        <item>ترجمه و محتوا</item>
+        <item>تحقیقات</item>
+        <item>تجارت و حسابداری</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

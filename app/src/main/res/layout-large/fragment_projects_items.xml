@@ -1,0 +1,700 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="group.tamasha.rockaar.ProjectsItemsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:id="@+id/parent_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/pi_header"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:text="طراحی سایت اکبر آقا عبدی"
+                    android:textColor="#000000"
+                    android:textSize="24dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/pi_underheader"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="برنامه نویسی / حامد جواهری"
+                    android:textColor="#44b1c5"
+                    android:textSize="18sp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_header" />
+
+                <ImageView
+                    android:id="@+id/pi_bidsimgx"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_marginRight="8dp"
+                    android:tint="#44b1c5"
+                    app:layout_constraintRight_toLeftOf="@+id/pr_lline"
+                    app:layout_constraintTop_toTopOf="@+id/pr_lline"
+                    app:srcCompat="@drawable/bids" />
+
+                <TextView
+                    android:id="@+id/pi_bidstitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:text="تعداد پیشنهادات"
+                    android:textColor="#44b1c5"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_bidsimgx"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/pi_bidsimgx"
+                    app:layout_constraintTop_toTopOf="@+id/pi_bidsimgx"
+                    app:layout_constraintVertical_bias="0.666" />
+
+                <TextView
+                    android:id="@+id/pi_bidsvalue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="120"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/pi_bidstitle"
+                    app:layout_constraintRight_toRightOf="@+id/pi_bidsimgx"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_bidsimgx" />
+
+                <ImageView
+                    android:id="@+id/pi_timeimgx"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="8dp"
+                    android:tint="#44b1c5"
+                    app:layout_constraintRight_toLeftOf="@+id/pi_rline"
+                    app:layout_constraintTop_toTopOf="@+id/pi_rline"
+                    app:srcCompat="@drawable/time" />
+
+                <TextView
+                    android:id="@+id/pi_timetitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:gravity="center"
+                    android:text="مدت زمان انجام"
+                    android:textColor="#44b1c5"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_timeimgx"
+                    app:layout_constraintRight_toLeftOf="@+id/pi_timeimgx"
+                    app:layout_constraintTop_toTopOf="@+id/pi_timeimgx" />
+
+                <TextView
+                    android:id="@+id/pi_timevalue"
+                    android:layout_width="39dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="45"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_timetitle" />
+
+                <ImageView
+                    android:id="@+id/pi_priceimgx"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="4dp"
+                    android:tint="#44b1c5"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_pricetitle"
+                    app:layout_constraintLeft_toRightOf="@+id/pi_pricetitle"
+                    app:layout_constraintTop_toTopOf="@+id/pi_pricetitle"
+                    app:srcCompat="@drawable/money" />
+
+                <TextView
+                    android:id="@+id/pi_pricetitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="قیمت پیشنهادی"
+                    android:textColor="#44b1c5"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_timeimgx"
+                    app:layout_constraintLeft_toRightOf="@+id/pi_rline"
+                    app:layout_constraintTop_toTopOf="@+id/pi_rline" />
+
+                <TextView
+                    android:id="@+id/pi_pricevalue"
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="12,000,000"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="@+id/pi_pricetitle"
+                    app:layout_constraintStart_toEndOf="@+id/pi_rline"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_pricetitle" />
+
+                <ImageView
+                    android:id="@+id/pr_lline"
+                    android:layout_width="2dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintRight_toLeftOf="@+id/pi_timevalue"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_underheader"
+                    app:srcCompat="@drawable/addprojectblueline" />
+
+                <ImageView
+                    android:id="@+id/pi_rline"
+                    android:layout_width="2dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintLeft_toRightOf="@+id/pi_timevalue"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_underheader"
+                    app:srcCompat="@drawable/addprojectblueline" />
+
+                <ImageView
+                    android:id="@+id/pi_infoback"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_rline"
+                    app:srcCompat="@drawable/addprojectgray" />
+
+                <ImageView
+                    android:id="@+id/pi_infoimg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:tint="#44b1c5"
+                    app:layout_constraintRight_toRightOf="@+id/pi_infoback"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_infoline"
+                    app:srcCompat="@drawable/info" />
+
+                <ImageView
+                    android:id="@+id/pi_infoline"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/pi_infoback"
+                    app:layout_constraintRight_toRightOf="@+id/pi_infoback"
+                    app:layout_constraintTop_toTopOf="@+id/pi_infoback"
+                    app:srcCompat="@drawable/addprojectblueline" />
+
+                <TextView
+                    android:id="@+id/pi_infotitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="right"
+                    android:text="توضیحات پروژه"
+                    android:textColor="#44b1c5"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_infoimg"
+                    app:layout_constraintLeft_toLeftOf="@+id/pi_infoback"
+                    app:layout_constraintRight_toLeftOf="@+id/pi_infoimg"
+                    app:layout_constraintTop_toTopOf="@+id/pi_infoimg" />
+
+                <ImageView
+                    android:id="@+id/pi_attachback"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_infoback"
+                    app:srcCompat="@drawable/addprojectbox" />
+
+                <ImageView
+                    android:id="@+id/pi_attachimg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:tint="#44b1c5"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_attachback"
+                    app:layout_constraintRight_toRightOf="@+id/pi_attachback"
+                    app:layout_constraintTop_toTopOf="@+id/pi_attachback"
+                    app:layout_constraintVertical_bias="0.444"
+                    app:srcCompat="@drawable/attachment" />
+
+                <TextView
+                    android:id="@+id/pi_attachtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="right"
+                    android:text="فایل ضمیمه"
+                    android:textColor="#44b1c5"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_attachimg"
+                    app:layout_constraintEnd_toStartOf="@+id/pi_attachimg"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="@+id/pi_attachimg"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/pi_bidsback"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_attachback"
+                    app:srcCompat="@drawable/addprojectgray" />
+
+                <ImageView
+                    android:id="@+id/pi_bidsline"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/pi_infoback"
+                    app:layout_constraintRight_toRightOf="@+id/pi_infoback"
+                    app:layout_constraintTop_toTopOf="@+id/pi_bidsback"
+                    app:srcCompat="@drawable/addprojectblueline" />
+
+                <ImageView
+                    android:id="@+id/pi_bidsimg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:tint="#44b1c5"
+                    app:layout_constraintRight_toRightOf="@+id/pi_bidsback"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_bidsline"
+                    app:srcCompat="@drawable/otherbids" />
+
+                <TextView
+                    android:id="@+id/pi_otherbidstitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="right"
+                    android:text="پیشنهادات دیگر"
+                    android:textColor="#44b1c5"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_bidsimg"
+                    app:layout_constraintLeft_toLeftOf="@+id/pi_bidsback"
+                    app:layout_constraintRight_toLeftOf="@+id/pi_bidsimg"
+                    app:layout_constraintTop_toTopOf="@+id/pi_bidsimg" />
+
+                <ImageView
+                    android:id="@+id/pi_centerline"
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_description_imageview"
+                    app:srcCompat="@drawable/addprojectblueline" />
+
+                <ScrollView
+                    android:id="@+id/pi_infoscroll"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_infoback"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/pi_infoback"
+                    app:layout_constraintRight_toRightOf="@+id/pi_infoback"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_infotitle"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/pi_infotext"
+                                android:layout_width="520dp"
+                                android:layout_height="158dp"
+                                android:gravity="right"
+                                android:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است."
+                                android:textColor="#666666"
+                                android:textSize="18dp" />
+                        </android.support.constraint.ConstraintLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+                <TextView
+                    android:id="@+id/pi_timetext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="right"
+                    android:text="مدت زمان انجام"
+                    android:textColor="#44b1c5"
+                    android:textSize="18dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toRightOf="@+id/pi_centerline"
+                    app:layout_constraintRight_toLeftOf="@+id/pi_timeimg"
+                    app:layout_constraintTop_toTopOf="@+id/pi_centerline" />
+
+                <TextView
+                    android:id="@+id/pi_pricetext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="right"
+                    android:text="قیمت پیشنهادی"
+                    android:textColor="#44b1c5"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_priceimg"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/pi_priceimg"
+                    app:layout_constraintTop_toTopOf="@+id/pi_priceimg"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/pi_pricebox"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_centerline"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toRightOf="@+id/pi_pricetoman"
+                    app:layout_constraintRight_toLeftOf="@+id/pi_centerline"
+                    app:layout_constraintTop_toTopOf="@+id/pi_centerline"
+                    app:srcCompat="@drawable/addprojectbox" />
+
+                <ImageView
+                    android:id="@+id/pi_priceimg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="3dp"
+                    android:tint="#44b1c5"
+                    app:layout_constraintRight_toLeftOf="@+id/pi_centerline"
+                    app:layout_constraintTop_toTopOf="@+id/pi_centerline"
+                    app:srcCompat="@drawable/money" />
+
+                <ImageView
+                    android:id="@+id/pi_timeimg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="32dp"
+                    android:tint="#44b1c5"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_timetext"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/pi_timetext"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/time" />
+
+                <TextView
+                    android:id="@+id/pi_pricetoman"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:text="تومان"
+                    android:textColor="#44b1c5"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_pricebox"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/pi_pricebox"
+                    app:layout_constraintVertical_bias="0.3" />
+
+                <ImageView
+                    android:id="@+id/pi_timebox"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_pricebox"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/pi_timerooz"
+                    app:layout_constraintTop_toTopOf="@+id/pi_pricebox"
+                    app:srcCompat="@drawable/addprojectbox" />
+
+                <TextView
+                    android:id="@+id/pi_timerooz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:text="روز"
+                    android:textColor="#44b1c5"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_timebox"
+                    app:layout_constraintStart_toEndOf="@+id/pi_centerline"
+                    app:layout_constraintTop_toTopOf="@+id/pi_timebox" />
+
+                <Button
+                    android:id="@+id/pi_button"
+                    android:layout_width="230dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="48dp"
+                    android:background="@drawable/enterbutton"
+                    android:text="ارسال پیشنهاد"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_centerline" />
+
+                <ImageView
+                    android:id="@+id/pi_description_imageview"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="48dp"
+                    android:src="@drawable/addprojectgray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_bidsback" />
+
+                <ImageView
+                    android:id="@+id/pi_line"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="32dp"
+                    android:src="@drawable/addprojectblueline"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/pi_description_imageview" />
+
+                <ImageView
+                    android:id="@+id/pi_info_imageview"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/info"
+                    android:tint="#44b1c5"
+                    app:layout_constraintEnd_toEndOf="@+id/pi_description_imageview"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_line" />
+
+                <TextView
+                    android:id="@+id/ip_description_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="توضیحات من"
+                    android:textColor="@color/RakaarColor"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toStartOf="@+id/pi_info_imageview"
+                    app:layout_constraintStart_toStartOf="@+id/pi_description_imageview"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_line" />
+
+                <EditText
+                    android:id="@+id/pi_timenumber"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textColor="#323333"
+                    android:textColorHint="#a1d8e2"
+                    android:textCursorDrawable="@color/RakaarColor"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_timebox"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/pi_timebox"
+                    app:layout_constraintRight_toRightOf="@+id/pi_timebox"
+                    app:layout_constraintTop_toTopOf="@+id/pi_timebox"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/pi_pricenumber"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textColor="#323333"
+                    android:textColorHint="#a1d8e2"
+                    android:textCursorDrawable="@color/RakaarColor"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_pricebox"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/pi_pricebox"
+                    app:layout_constraintRight_toRightOf="@+id/pi_pricebox"
+                    app:layout_constraintTop_toTopOf="@+id/pi_pricebox"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/pi_decription_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="بنویس ..."
+                    android:inputType="textMultiLine"
+                    android:maxLength="150"
+                    android:textColor="#323333"
+                    android:textColorHint="#a1d8e2"
+                    android:textCursorDrawable="@color/RakaarColor"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_description_imageview"
+                    app:layout_constraintEnd_toEndOf="@+id/pi_description_imageview"
+                    app:layout_constraintStart_toStartOf="@+id/pi_description_imageview"
+                    app:layout_constraintTop_toBottomOf="@+id/ip_description_textview" />
+
+                <ListView
+                    android:id="@+id/pi_listview"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="8dp"
+                    android:listSelector="@android:color/transparent"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_bidsback"
+                    app:layout_constraintEnd_toEndOf="@+id/pi_bidsback"
+                    app:layout_constraintStart_toStartOf="@+id/pi_bidsback"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_bidsimg"></ListView>
+
+                <TextView
+                    android:id="@+id/pi_nulltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="پیشنهاد دیگری وجود ندارد!"
+                    android:textColor="#666666"
+                    android:textSize="14dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_listview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/pi_listview" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="37dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:text="روز"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="@+id/pi_rline"
+                    app:layout_constraintStart_toStartOf="@+id/pr_lline"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_timevalue" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:text="تومان"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="@+id/pi_pricevalue"
+                    app:layout_constraintStart_toStartOf="@+id/pi_pricevalue"
+                    app:layout_constraintTop_toBottomOf="@+id/pi_pricevalue" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="40dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/download_file"
+                    app:layout_constraintBottom_toBottomOf="@+id/pi_attachback"
+                    app:layout_constraintStart_toStartOf="@+id/pi_attachback"
+                    app:layout_constraintTop_toTopOf="@+id/pi_attachback" />
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ede5cf"
+    tools:context="group.tamasha.rockaar.RegisterActivity">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:indicatorColor="@color/RakaarColor"
+        app:indicatorName="BallClipRotateMultipleIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/regbutton"
+            android:layout_width="300dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/enterbutton"
+            android:text="ثبت نام"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regic" />
+
+        <ImageView
+            android:id="@+id/regun"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registerlogo"
+            app:srcCompat="@drawable/signinbox" />
+
+        <EditText
+            android:id="@+id/editun"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:textCursorDrawable="@color/RakaarColor"
+            android:hint="نام کاربری"
+            android:inputType="textPersonName"
+            android:textColor="#222222"
+            android:textColorHint="#a1d9e0"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/regun"
+            app:layout_constraintLeft_toLeftOf="@+id/regun"
+            app:layout_constraintRight_toRightOf="@+id/regun"
+            app:layout_constraintTop_toTopOf="@+id/regun" />
+
+        <ImageView
+            android:id="@+id/regpw"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regun"
+            app:srcCompat="@drawable/signinbox" />
+
+        <EditText
+            android:id="@+id/editpw"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:textCursorDrawable="@color/RakaarColor"
+            android:hint="رمز عبور"
+            android:inputType="textPassword"
+            android:textColor="#222222"
+            android:textColorHint="#a1d9e0"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/regpw"
+            app:layout_constraintLeft_toLeftOf="@+id/regpw"
+            app:layout_constraintRight_toRightOf="@+id/regpw"
+            app:layout_constraintTop_toTopOf="@+id/regpw" />
+
+        <ImageView
+            android:id="@+id/regem"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regpw"
+            app:srcCompat="@drawable/signinbox" />
+
+        <EditText
+            android:id="@+id/editem"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:textCursorDrawable="@color/RakaarColor"
+            android:hint="ایمیل"
+            android:inputType="textEmailAddress"
+            android:textColor="#222222"
+            android:textColorHint="#a1d9e0"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/regem"
+            app:layout_constraintLeft_toLeftOf="@+id/regem"
+            app:layout_constraintRight_toRightOf="@+id/regem"
+            app:layout_constraintTop_toTopOf="@+id/regem" />
+
+        <ImageView
+            android:id="@+id/regfn"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regem"
+            app:srcCompat="@drawable/signinbox" />
+
+        <EditText
+            android:id="@+id/editfn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:textCursorDrawable="@color/RakaarColor"
+            android:hint="نام کامل"
+            android:inputType="textPersonName"
+            android:textColor="#222222"
+            android:textColorHint="#a1d9e0"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/regfn"
+            app:layout_constraintLeft_toLeftOf="@+id/regfn"
+            app:layout_constraintRight_toRightOf="@+id/regfn"
+            app:layout_constraintTop_toTopOf="@+id/regfn" />
+
+        <ImageView
+            android:id="@+id/regmc"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regfn"
+            app:srcCompat="@drawable/signinbox" />
+
+        <EditText
+            android:id="@+id/editmc"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:textCursorDrawable="@color/RakaarColor"
+            android:hint="کد ملی"
+            android:inputType="number"
+            android:textColor="#222222"
+            android:textColorHint="#a1d9e0"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/regmc"
+            app:layout_constraintLeft_toLeftOf="@+id/regmc"
+            app:layout_constraintRight_toRightOf="@+id/regmc"
+            app:layout_constraintTop_toTopOf="@+id/regmc" />
+
+        <ImageView
+            android:id="@+id/regpn"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regmc"
+            app:srcCompat="@drawable/signinbox" />
+
+        <EditText
+            android:id="@+id/editpn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:textCursorDrawable="@color/RakaarColor"
+            android:hint="شماره همراه"
+            android:inputType="number"
+            android:textColor="#222222"
+            android:textColorHint="#a1d9e0"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/regpn"
+            app:layout_constraintLeft_toLeftOf="@+id/regpn"
+            app:layout_constraintRight_toRightOf="@+id/regpn"
+            app:layout_constraintTop_toTopOf="@+id/regpn" />
+
+        <ImageView
+            android:id="@+id/regex"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regpn"
+            app:srcCompat="@drawable/signinbox" />
+
+        <TextView
+            android:id="@+id/editex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="تخصص"
+            android:textColor="#a1d9e0"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/regex"
+            app:layout_constraintEnd_toEndOf="@+id/regex"
+            app:layout_constraintStart_toStartOf="@+id/regex"
+            app:layout_constraintTop_toTopOf="@+id/regex" />
+
+        <ImageView
+            android:id="@+id/regic"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regex"
+            app:srcCompat="@drawable/signinbox" />
+
+        <EditText
+            android:id="@+id/editic"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0dp"
+            android:visibility="invisible"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:textCursorDrawable="@color/RakaarColor"
+            android:hint="کد معرف (اختیاری)"
+            android:inputType="number"
+            android:textColor="#222222"
+            android:textColorHint="#a1d9e0"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/regic"
+            app:layout_constraintLeft_toLeftOf="@+id/regic"
+            app:layout_constraintRight_toRightOf="@+id/regic"
+            app:layout_constraintTop_toTopOf="@+id/regic" />
+
+        <ImageView
+            android:id="@+id/registerlogo"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/raakartitle" />
+
+        <RelativeLayout
+            android:id="@+id/expertisewheel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:foregroundGravity="bottom"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <LinearLayout
+                android:id="@+id/wheelpicker"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_alignParentBottom="true"
+                android:background="#ffffff"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <com.aigestudio.wheelpicker.WheelPicker
+                    android:id="@+id/main_wheel_center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    app:wheel_atmospheric="true"
+                    app:wheel_curved="true"
+                    app:wheel_cyclic="true"
+                    app:wheel_item_text_color="#a1d9e0"
+                    app:wheel_item_text_size="18sp"
+                    app:wheel_selected_item_text_color="#536D8A" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wheelbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="top"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/regexbutton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="1"
+                    android:background="@drawable/confirmstroke"
+                    android:foregroundGravity="top"
+                    android:gravity="bottom"
+                    android:onClick="datepicked" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

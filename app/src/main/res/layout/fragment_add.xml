@@ -1,0 +1,518 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="group.tamasha.rockaar.AddFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/add_headerback"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="#43b0be"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_header"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/add_header"
+                    app:layout_constraintRight_toRightOf="@+id/add_header"
+                    app:layout_constraintTop_toTopOf="@+id/add_header" />
+
+                <TextView
+                    android:id="@+id/add_header"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="اطلاعات پروژه"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/add_titlebox"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/add_header"
+                    app:srcCompat="@drawable/addprojectbox" />
+
+                <ImageView
+                    android:id="@+id/add_titleimg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:tint="#44b1c5"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_titlebox"
+                    app:layout_constraintRight_toRightOf="@+id/add_titlebox"
+                    app:layout_constraintTop_toTopOf="@+id/add_titlebox"
+                    app:srcCompat="@drawable/title" />
+
+                <EditText
+                    android:id="@+id/add_titletext"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="عنوان"
+                    android:inputType="text"
+                    android:textColor="#323333"
+                    android:textColorHint="#a1d8e2"
+                    android:textCursorDrawable="@color/RakaarColor"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_titlebox"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/add_titlebox"
+                    app:layout_constraintRight_toLeftOf="@+id/add_titleimg"
+                    app:layout_constraintTop_toTopOf="@+id/add_titlebox"
+                    app:layout_constraintVertical_bias="0.333" />
+
+                <ImageView
+                    android:id="@+id/add_priceimg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:tint="#44b1c5"
+                    app:layout_constraintRight_toLeftOf="@+id/add_centerline"
+                    app:layout_constraintTop_toTopOf="@+id/add_centerline"
+                    app:srcCompat="@drawable/money" />
+
+                <ImageView
+                    android:id="@+id/add_timeimg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="32dp"
+                    android:tint="#44b1c5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/add_centerline"
+                    app:srcCompat="@drawable/time" />
+
+                <TextView
+                    android:id="@+id/add_timetext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="right"
+                    android:text="مدت زمان انجام"
+                    android:textColor="#44b1c5"
+                    android:textSize="14dp"
+                    app:layout_constraintLeft_toRightOf="@+id/add_centerline"
+                    app:layout_constraintRight_toLeftOf="@+id/add_timeimg"
+                    app:layout_constraintTop_toTopOf="@+id/add_centerline" />
+
+                <ImageView
+                    android:id="@+id/add_timebox"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/add_timerooz"
+                    app:layout_constraintTop_toBottomOf="@+id/add_timetext"
+                    app:srcCompat="@drawable/addprojectbox" />
+
+                <EditText
+                    android:id="@+id/add_timenumber"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textColor="#323333"
+                    android:textColorHint="#a1d8e2"
+                    android:textCursorDrawable="@color/RakaarColor"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_timebox"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/add_timebox"
+                    app:layout_constraintRight_toRightOf="@+id/add_timebox"
+                    app:layout_constraintTop_toTopOf="@+id/add_timebox"
+                    app:layout_constraintVertical_bias="0.428" />
+
+                <TextView
+                    android:id="@+id/add_pricetext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:gravity="right"
+                    android:text="قیمت پیشنهادی"
+                    android:textColor="#44b1c5"
+                    android:textSize="14dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/add_priceimg"
+                    app:layout_constraintTop_toTopOf="@+id/add_centerline" />
+
+                <TextView
+                    android:id="@+id/add_timerooz"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:gravity="left"
+                    android:text="روز"
+                    android:textColor="#44b1c5"
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_pricetoman"
+                    app:layout_constraintStart_toEndOf="@+id/add_centerline"
+                    app:layout_constraintTop_toTopOf="@+id/add_pricetoman" />
+
+                <TextView
+                    android:id="@+id/add_pricetoman"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:text="تومان"
+                    android:textColor="#44b1c5"
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_pricebox"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/add_pricebox"
+                    app:layout_constraintVertical_bias="0.4" />
+
+                <ImageView
+                    android:id="@+id/add_pricebox"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toRightOf="@+id/add_pricetoman"
+                    app:layout_constraintRight_toLeftOf="@+id/add_centerline"
+                    app:layout_constraintTop_toBottomOf="@+id/add_pricetext"
+                    app:srcCompat="@drawable/addprojectbox" />
+
+                <ImageView
+                    android:id="@+id/add_centerline"
+                    android:layout_width="2dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/add_titlebox"
+                    app:srcCompat="@drawable/addprojectblueline" />
+
+                <EditText
+                    android:id="@+id/add_pricenumber"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textColor="#323333"
+                    android:textColorHint="#a1d8e2"
+                    android:textCursorDrawable="@color/RakaarColor"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_pricebox"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/add_pricebox"
+                    app:layout_constraintRight_toRightOf="@+id/add_pricebox"
+                    app:layout_constraintTop_toTopOf="@+id/add_pricebox"
+                    app:layout_constraintVertical_bias="0.571" />
+
+                <TextView
+                    android:id="@+id/add_warning"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="در صورتی که فیلد قیمت خالی باشد، مبلغ توافقی درنظر گرفته می شود"
+                    android:textColor="#44b1c5"
+                    android:textSize="10dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/add_centerline" />
+
+                <ImageView
+                    android:id="@+id/add_categoryback"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/add_warning"
+                    app:srcCompat="@drawable/addprojectbox" />
+
+                <ImageView
+                    android:id="@+id/add_categoryimg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:tint="#44b1c5"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_categoryback"
+                    app:layout_constraintRight_toRightOf="@+id/add_categoryback"
+                    app:layout_constraintTop_toTopOf="@+id/add_categoryback"
+                    app:layout_constraintVertical_bias="0.529"
+                    app:srcCompat="@drawable/category" />
+
+                <TextView
+                    android:id="@+id/add_categorytext"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:text="دسته بندی"
+                    android:textColor="#44b1c5"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_categoryback"
+                    app:layout_constraintRight_toLeftOf="@+id/add_categoryimg"
+                    app:layout_constraintTop_toTopOf="@+id/add_categoryback"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/add_infoback"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/add_categoryback"
+                    app:srcCompat="@drawable/addprojectgray" />
+
+                <ImageView
+                    android:id="@+id/add_infoimg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:tint="#44b1c5"
+                    app:layout_constraintRight_toRightOf="@+id/add_infoback"
+                    app:layout_constraintTop_toBottomOf="@+id/add_infoline"
+                    app:srcCompat="@drawable/info" />
+
+                <ImageView
+                    android:id="@+id/add_infoline"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/add_infoback"
+                    app:layout_constraintRight_toRightOf="@+id/add_infoback"
+                    app:layout_constraintTop_toTopOf="@+id/add_infoback"
+                    app:srcCompat="@drawable/addprojectblueline" />
+
+                <TextView
+                    android:id="@+id/add_infotitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="right"
+                    android:text="توضیحات"
+                    android:textColor="#44b1c5"
+                    android:textSize="14dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/add_infoback"
+                    app:layout_constraintRight_toLeftOf="@+id/add_infoimg"
+                    app:layout_constraintTop_toBottomOf="@+id/add_infoline" />
+
+                <EditText
+                    android:id="@+id/add_infotext"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="بنویس ..."
+                    android:inputType="text"
+                    android:textColor="#323333"
+                    android:textColorHint="#a1d8e2"
+                    android:textCursorDrawable="@color/RakaarColor"
+                    android:textSize="11dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_infoback"
+                    app:layout_constraintLeft_toLeftOf="@+id/add_infoback"
+                    app:layout_constraintRight_toRightOf="@+id/add_infoback"
+                    app:layout_constraintTop_toBottomOf="@+id/add_infotitle" />
+
+                <ImageView
+                    android:id="@+id/add_attachback"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/add_infoback"
+                    app:srcCompat="@drawable/addprojectbox" />
+
+                <ImageView
+                    android:id="@+id/add_attachimg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:tint="#44b1c5"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_attachback"
+                    app:layout_constraintRight_toRightOf="@+id/add_attachback"
+                    app:layout_constraintTop_toTopOf="@+id/add_attachback"
+                    app:srcCompat="@drawable/attachment" />
+
+                <TextView
+                    android:id="@+id/add_attachtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:text="فایل ضمیمه"
+                    android:textColor="#44b1c5"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_attachback"
+                    app:layout_constraintEnd_toStartOf="@+id/add_attachimg"
+                    app:layout_constraintStart_toEndOf="@+id/add_upload"
+                    app:layout_constraintTop_toTopOf="@+id/add_attachback" />
+
+                <Button
+                    android:id="@+id/add_button"
+                    android:layout_width="150dp"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/enterbutton"
+                    android:text="ثبت"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/add_attachback"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Spinner
+                    android:id="@+id/add_spinnercategory"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#f9f9f9"
+                    android:entries="@array/category_arrays"
+                    android:prompt="@string/category_prompt"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_categoryback"
+                    app:layout_constraintLeft_toLeftOf="@+id/add_categoryback"
+                    app:layout_constraintRight_toLeftOf="@+id/add_categorytext"
+                    app:layout_constraintTop_toTopOf="@+id/add_categoryback" />
+
+                <ImageView
+                    android:id="@+id/add_imageToUpload"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/add_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/add_attachback" />
+
+                <ImageView
+                    android:id="@+id/add_upload"
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/upload_file"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_attachback"
+                    app:layout_constraintStart_toStartOf="@+id/add_attachback"
+                    app:layout_constraintTop_toTopOf="@+id/add_attachback" />
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
